@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!--styles-->
     <link rel="stylesheet" href="src/css/Normalize.css">
     <link rel="stylesheet" href="src/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Modal window</title>
   </head>
   <body>
     <div class="modal">
@@ -16,15 +20,43 @@
                     <img src="src/img/mainPhoto.png" alt="Главное фото" width="330" height="330" class="mainPhotoImg">
                 </div>
                 <div class="otherPhotos">
-                    <img src="src/img/photo2.png" alt="прочее Фото" width="50" height="50">
-                    <img src="src/img/photo1.png" alt="прочее Фото" width="50" height="50" class="imgActive">
                     <img src="src/img/photo3.png" alt="прочее Фото" width="50" height="50">
+                    <img src="src/img/photo1.png" alt="прочее Фото" width="50" height="50" class="imgActive">
+                    <img src="src/img/photo2.png" alt="прочее Фото" width="50" height="50">
                 </div>
             </div>
             <div class="orderInfo">
-
+                <div class="productName">
+                    Футболка "Эволюционируй или сдохни"
+                </div>
+                <div class="balance">
+                    <div class="balls">
+                        <span class="price">100 баллов</span>
+                        <button type = "button" class="orderBtn">Заказать</button>
+                    </div>
+                    <div class="yourBalance">
+                        <div class="text">
+                            <div class="yourBalanceText">Твой баланс</div>
+                            <div class="yourBalanceQuantity">3 945 баллов</div>
+                        </div>
+                        <img src="src/img/package.png" alt="Покупки" class="package" width="40" height="41">
+                    </div>
+                </div>
+                <div class="colorBlock">
+                    <div class="colorTitle">
+                        Цвета:
+                    </div>
+                    <div class="colorList">
+                        <input type="radio" class="colorsItem" id="radio-1" name="colors" checked>
+                        <label for="radio-1" class="colorsLabel colorsBlue">Синий</label>
+                        <input type="radio" class="colorsItem" id="radio-2" name="colors">
+                        <label for="radio-2" class="colorsLabel colorsBeige">Бежевый</label>
+                        <input type="radio" class="colorsItem" id="radio-3" name="colors">
+                        <label for="radio-3" class="colorsLabel colorsGrey">Серый</label>
+                    </div>
+                </div>
             </div>
-            <button class="closeModal"><img src="src/img/close-btn.png" alt="Закрыть окно" width="32" height="32"></button>
+            <button type = "button" class="closeModal"><img src="src/img/close-btn.png" alt="Закрыть окно" width="32" height="32"></button>
         </div>
     </div>
   </body>
