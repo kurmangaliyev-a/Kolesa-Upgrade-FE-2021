@@ -91,6 +91,7 @@ body {
     line-height: 32px;
     color: #1c1819;
     margin-bottom: 8px;
+    letter-spacing: 0.3px;
 }
 
 .orderBtn {
@@ -119,6 +120,7 @@ body {
     padding-top: 14px;
     align-items: center;
     background-color: #f0fafd;
+    border-radius: 16px;
 }
 
 .yourBalanceText {
@@ -168,21 +170,9 @@ body {
     line-height: 24px;
 }
 
-.colorsItem:checked + .colorsBlue {
+.colorsItem:checked + .colorsLabel {
     background-color: #d6ecfb;
     outline: 1px solid #d6ecfb;
-    color: #1c1819;
-}
-
-.colorsItem:checked + .colorsBeige {
-    background-color: #dfd8c8;
-    outline: 1px solid #dfd8c8;
-    color: #1c1819;
-}
-
-.colorsItem:checked + .colorsGrey {
-    background-color: #c5c5c5;
-    outline: 1px solid #c5c5c5;
     color: #1c1819;
 }
 
@@ -221,12 +211,13 @@ body {
     width: 40px;
     height: 40px;
     color: #2a81dd;
-    outline: 1px solid #d6ecfb;
+    outline: 1px solid rgba(28, 24, 25, 0.1);
     cursor: pointer;
 }
 
 .sizeList input:checked + label {
     background-color: #d6ecfb;
+    outline: 1px solid #d6ecfb;
     color: #1c1819;
 }
 
