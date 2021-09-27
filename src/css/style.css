@@ -118,6 +118,7 @@ body {
     gap: 24px;
     padding-top: 14px;
     align-items: center;
+    background-color: #f0fafd;
 }
 
 .yourBalanceText {
@@ -126,6 +127,7 @@ body {
     font-size: 14px;
     color: #888b94;
     margin-bottom: 8px;
+    border-radius: 16px;
 }
 
 .yourBalanceQuantity {
