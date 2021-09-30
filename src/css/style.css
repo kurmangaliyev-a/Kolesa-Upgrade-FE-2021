@@ -1,11 +1,22 @@
 * {
-    /* outline: 1px solid red; */
+    /*    outline: 1px solid red; */
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background: no-repeat url('../img/car.jpg'); /* яркая картинка, для фона временно */
-    background-size: cover;
+    background-color: #ff0;
+    display: flex;
 }
 
 .modal {
@@ -260,4 +271,94 @@ body {
 
 .choiseSize {
     margin-bottom: 12px;
+}
+
+.hide {
+    display: none;
+}
+
+footer {
+    align-self: flex-end;
+    width: 100%;
+    background-color: #1c1819;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    color: #fff;
+    gap: 24px;
+    margin: 0;
+    overflow: hidden;
+}
+
+footer .socialMedia {
+    padding: 8px;
+    display: grid;
+    gap: 8px;
+}
+
+footer .companyName {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+footer .socialMediaLinks {
+    display: flex;
+    gap: 8px;
+}
+
+footer .contactUs {
+    display: flex;
+    gap: 32px;
+}
+
+footer .footer__text {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+footer .contactUsBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .contactUsBtn button {
+    background-color: #fff;
+    padding: 8px;
+    color: #2a81dd;
+    width: 150px;
+    height: 36px;
+    font-size: 14px;
+    text-align: center;
+
+    /* opacity: 0.9; не могу понять откуда в фигме прозрачность */
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 620px) {
+    footer .contactUs {
+        display: flex;
+        gap: 8px;
+    }
+
+    footer .contactUsBtn button {
+        width: 100%;
+        padding: 4px;
+    }
+}
+
+@media (max-width: 360px) {
+    footer .contactUs {
+        display: flex;
+        flex-direction: column;
+        width: 344px;
+        padding: 8px;
+        gap: 8px;
+    }
+
+    footer .footer__text {
+        font-size: 12px;
+    }
 }
