@@ -483,8 +483,9 @@ footer .contactUsBtn button {
 .actionBlocks {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 40px;
+    gap: 24px;
 }
 
 .actionBlocks .take {
@@ -550,6 +551,7 @@ footer .contactUsBtn button {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 24px;
+    margin-bottom: 64px;
 }
 
 .product .productPrice {
