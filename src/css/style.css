@@ -1,8 +1,3 @@
-* {
-    /*    outline: 1px solid red; */
-    margin: 0;
-    padding: 0;
-}
 
 img {
     display: block;
@@ -15,8 +10,22 @@ body {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #ff0;
+
+    /* background-color: #ff0; */
+    display: grid;
+    grid-template-rows: 1fr max-content;
+}
+
+footer {
+    background-color: #1c1819;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    color: #fff;
+    gap: 24px;
+    margin: 0;
+    overflow: hidden;
 }
 
 .modal {
@@ -277,20 +286,6 @@ body {
     display: none;
 }
 
-footer {
-    align-self: flex-end;
-    width: 100%;
-    background-color: #1c1819;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px;
-    color: #fff;
-    gap: 24px;
-    margin: 0;
-    overflow: hidden;
-}
-
 footer .socialMedia {
     padding: 8px;
     display: grid;
@@ -337,28 +332,184 @@ footer .contactUsBtn button {
     cursor: pointer;
 }
 
-@media (max-width: 620px) {
-    footer .contactUs {
-        display: flex;
-        gap: 8px;
-    }
-
-    footer .contactUsBtn button {
-        width: 100%;
-        padding: 4px;
-    }
+.main {
+    display: flex;
 }
 
-@media (max-width: 360px) {
-    footer .contactUs {
-        display: flex;
-        flex-direction: column;
-        width: 344px;
-        padding: 8px;
-        gap: 8px;
-    }
+.navigation {
+    padding: 32px;
+    width: 248px;
+    background-color: #fff;
+}
 
-    footer .footer__text {
-        font-size: 12px;
-    }
+.logoKolesa {
+    height: 40px;
+    margin-top: 8px;
+    align-content: center;
+}
+
+.imgLogo {
+    margin-bottom: 24px;
+}
+
+.navigationList {
+    text-decoration: none;
+    padding: 0;
+}
+
+.nav__active_li {
+    border-left: 4px solid #2a81dd;
+}
+
+.navigationList li {
+    height: 44px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.navigationList a:hover {
+    background-color: #ddd;
+    filter: brightness(150%);
+}
+
+.navigationList a {
+    padding-left: 8px;
+    color: #1c1819;
+    text-decoration: none;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    margin-right: 88px;
+    overflow: hidden;
+    overflow-y: hidden;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    height: 48px;
+    margin-bottom: 24px;
+}
+
+.header .search {
+    display: inline-flex;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #f2f2f3;
+}
+
+.header .search input[type='search'] {
+    background-color: #f2f2f3;
+}
+
+.header .search-icon {
+    margin-right: 10px;
+    margin-top: 4px;
+    order: -1;
+}
+
+.header .search-field {
+    width: 300px;
+    border: 0;
+}
+
+.header .search-field:focus {
+    outline: none;
+}
+
+.header .search-field:focus + .search-icon {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition-duration: 0.4s;
+}
+
+.header .profile {
+    display: flex;
+    gap: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.header .profile:hover {
+    outline: 1px solid rgba(28, 24, 25, 0.1);
+    filter: brightness(110%);
+}
+
+.header .profileContent {
+    display: grid;
+}
+
+.header .userPhoto {
+    border-radius: 50%;
+}
+
+.header .profileContent p {
+    margin: 0;
+}
+
+.header .profileContent .userName {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #2a81dd;
+}
+
+.header .profileContent .currentBalance {
+    color: #1c1819;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.banner {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 24px;
+}
+
+.actionBlocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 24px;
+    margin-bottom: 40px;
+}
+
+.actionBlocks .action {
+    width: 330px;
+    height: 76px;
+    display: flex;
+    gap: 16px;
+    background-color: #eff8eb;
+    border-radius: 16px;
+    padding-left: 24px;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.actionBlocks .actionText {
+    font-weight: 600;
+    font-size: 20px;
+    color: #1c1819;
+}
+
+.actionBlocks .action:hover {
+    outline: 1px solid rgba(28, 24, 25, 0.3);
+}
+
+* {
+    /* outline: 1px solid red;
+}
+*/
 }

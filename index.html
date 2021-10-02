@@ -5,16 +5,71 @@
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <!--styles-->
     <link rel="stylesheet" href="src/css/Normalize.css">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/media.css">
+    <!--favicon-->
+    <link type="image/x-icon" href="src/img/favicon.ico" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kolesa Group</title>
   </head>
   <body>
-      <footer>
+    <section class="main">
+        <div class="nav nav__active">
+            <div class="darkBackground">
+                <div class="navigation">
+                    <div class="logoKolesa">
+                        <img src="src/img/logo.svg" alt="Логотип" width="215" height="32" class="imgLogo">
+                    </div>
+                    <ul class="navigationList">
+                        <li><a href="#">Оргсхема</a></li>
+                        <li><a href="#">Kolesa Team</a></li>
+                        <li class="nav__active_li"><a href="#">Kolesa Shop</a></li>
+                        <li><a href="#">Картина компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Guidelines</a></li>
+                        <li><a href="#">Библиотека</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                <div class="search">
+                    <input type="search" class="search-field" placeholder="Поиск">
+                    <img src="src/img/search.svg" alt="Поиск" class="search-icon" width="16" height="16">
+              </div>
+                <a class="profile">
+                    <img src="src/img/profile.png" class="userPhoto" alt="Профиль" height="44" width="44">
+                    <div href="#" class="profileContent">
+                        <p class="userName">Мортиджан</p>
+                        <p class="currentBalance"><span>300</span> баллов</p>
+                    </div>
+                </a>
+            </div>
+            <img src="src/img/banner.png" alt="банер" class="banner">
+            <div class="actionBlocks">
+                <a href="#" class="takeBalls action">
+                    <img src="src/img/plus.svg" alt="действие" class="actionLogo" width="48" height="56">
+                    <p class="actionText">Получить балы</p>
+                </a>
+                <a href="#" class="takeBalls action">
+                    <img src="src/img/question.svg" alt="действие" class="actionLogo" width="48" height="56">
+                    <p class="actionText">Как получить баллы</p>
+                </a>
+                <a href="#" class="takeBalls action">
+                    <img src="src/img/gift.svg" alt="действие" class="actionLogo" width="48" height="56">
+                    <p class="actionText">Подарить баллы</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
         <div class="socialMedia">
             <div class="companyName">
                 © Kolesa Group
@@ -39,7 +94,7 @@
                 <button type="button">Написать</button>
             </div>
         </div>
-      </footer>
+    </footer>
     <div class="modal hide">
         <div class="container">
             <div class="photo">
@@ -115,5 +170,6 @@
             <button type = "button" class="closeModal"><img src="src/img/close-btn.png" alt="Закрыть окно" width="32" height="32"></button>
         </div>
     </div>
+    <script src="src/js/main.js" defer></script>
   </body>
 </html>
