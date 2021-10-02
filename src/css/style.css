@@ -554,6 +554,18 @@ footer .contactUsBtn button {
     margin-bottom: 64px;
 }
 
+.product {
+    border-radius: 8px 8px 0 0;
+}
+
+.product:hover {
+    box-shadow: 0 2px 10px 0 #1c18191a;
+}
+
+.product .goodImg {
+    border-radius: 8px 8px 0 0;
+}
+
 .product .productPrice {
     font-weight: 600;
     font-size: 24px;
@@ -564,7 +576,8 @@ footer .contactUsBtn button {
 }
 
 .product .productInfo {
-    width: 330px;
+    width: 298px;
+    padding: 16px;
 }
 
 .product .productName {
@@ -621,6 +634,8 @@ footer .contactUsBtn button {
 
 .product:hover .orderDiv {
     display: block;
+    margin-left: -16px;
+    box-shadow: 0 2px 10px 0 #1c18191a;
 }
 
 .product .newProduct {
