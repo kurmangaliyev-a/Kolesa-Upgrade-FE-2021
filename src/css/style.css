@@ -38,7 +38,7 @@ footer {
     align-items: center;
 }
 
-.container {
+.modal .container {
     display: flex;
     gap: 24px;
     position: relative;
@@ -75,7 +75,7 @@ footer {
     pointer-events: none;
 }
 
-.closeModal {
+.closeModalBtn {
     padding: 0;
     position: absolute;
     background-color: #fff;
