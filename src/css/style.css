@@ -362,10 +362,6 @@ footer .contactUsBtn button {
     padding: 0;
 }
 
-.nav__active_li {
-    border-left: 4px solid #2a81dd;
-}
-
 .navigationList li {
     height: 44px;
     font-weight: 600;
@@ -376,17 +372,25 @@ footer .contactUsBtn button {
     white-space: nowrap;
 }
 
-.navigationList a:hover {
-    background-color: #ddd;
-    filter: brightness(150%);
-}
-
 .navigationList a {
     padding-left: 8px;
     color: #1c1819;
     text-decoration: none;
     font-size: 16px;
     width: 100%;
+}
+
+.navigationList a:hover {
+    background-color: #ddd;
+    filter: brightness(150%);
+}
+
+.nav__active_li {
+    border-left: 4px solid #2a81dd;
+}
+
+.nav__active_li a {
+    padding-left: 4px;
 }
 
 .content {
