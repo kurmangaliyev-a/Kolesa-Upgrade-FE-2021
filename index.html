@@ -5,16 +5,246 @@
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <!--styles-->
     <link rel="stylesheet" href="src/css/Normalize.css">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/media.css">
+    <!--favicon-->
+    <link type="image/x-icon" href="src/img/favicon.ico" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modal window</title>
+    <title>Kolesa Group</title>
   </head>
   <body>
-    <div class="modal">
+    <section class="main">
+        <div class="nav nav__active">
+            <div class="darkBackground">
+                <div class="navigation">
+                    <div class="logoKolesa">
+                        <img src="src/img/logo.svg" alt="Логотип" width="215" height="32" class="imgLogo">
+                    </div>
+                    <a class="profile">
+                        <img src="src/img/profile.png" class="userPhoto" alt="Профиль" height="52" width="52">
+                        <div href="#" class="profileContent">
+                            <p class="userName">Абдурахман Калиакпаров</p>
+                        </div>
+                    </a>
+                    <ul class="navigationList">
+                        <li><a href="#">Оргсхема</a></li>
+                        <li><a href="#">Kolesa Team</a></li>
+                        <li class="nav__active_li"><a href="#">Kolesa Shop</a></li>
+                        <li><a href="#">Картина компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Guidelines</a></li>
+                        <li><a href="#">Библиотека</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                <div class="search">
+                    <input type="search" class="search-field" placeholder="Поиск">
+                    <img src="src/img/search.svg" alt="Поиск" class="search-icon" width="16" height="16">
+              </div>
+                <a class="profile">
+                    <img src="src/img/profile.png" class="userPhoto" alt="Профиль" height="44" width="44">
+                    <div href="#" class="profileContent">
+                        <p class="userName">Абдурахман Калиакпаров</p>
+                        <p class="currentBalance"><span>300</span> баллов</p>
+                    </div>
+                </a>
+            </div>
+            <img src="src/img/banner.png" alt="банер" class="banner" width="1038">
+            <div class="actionBlocks">
+                <a href="#" class="take action">
+                    <img src="src/img/plus.svg" alt="действие" class="actionLogo" width="48" height="56">
+                    <p class="actionText">Получить балы</p>
+                </a>
+                <a href="#" class="howToTake action">
+                    <img src="src/img/question.svg" alt="действие" class="actionLogo" width="48" height="56">
+                    <p class="actionText">Как получить баллы</p>
+                </a>
+                <a href="#" class="donate action">
+                    <img src="src/img/gift.svg" alt="действие" class="actionLogo" width="48" height="56">
+                    <p class="actionText">Подарить баллы</p>
+                </a>
+            </div>
+            <div class="hotBtns">
+                <input type="radio" class="hotBtnItem" id="hotBtn-1" name="hotBtn" checked>
+                <label for="hotBtn-1" class="botBtnLabel sizeBlue">Все товары</label>
+                <input type="radio" class="hotBtnItem" id="hotBtn-2" name="hotBtn">
+                <label for="hotBtn-2" class="botBtnLabel sizeBeige">Одежда</label>
+                <input type="radio" class="hotBtnItem" id="hotBtn-3" name="hotBtn">
+                <label for="hotBtn-3" class="botBtnLabel sizeGrey">Аксессуары</label>
+            </div>
+            <div class="products">
+                <div class="product">
+                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
+                    <div class="newProduct">NEW</div>
+                    <div class="productInfo">
+                        <p class="productPrice">220 баллов</p>
+                        <p class="productName">Футболка "Эволюционируй или сдохни сдохни</p>
+                        <p class="sizes">Размеры <span>S/M/L</span></p>
+                        <div class="orderDiv">
+                            <button type="button" class="order openModal">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
+                    <div class="productInfo">
+                        <p class="productPrice">220 баллов</p>
+                        <p class="productName">Футболка "Эволюционируй или сдохни сдохнисдохнисдохниФутболка "Эволюционируй или сдохни сдохнисдохнисдохни</p>
+                        <p class="sizes">Размеры <span>S/M/L</span></p>
+                        <div class="orderDiv">
+                            <button type="button" class="order openModal">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
+                    <div class="productInfo">
+                        <p class="productPrice">220 баллов</p>
+                        <p class="productName">Футболка "Эволюционируй или сдохни сдохни</p>
+                        <p class="sizes">Размеры <span>S/M/L</span></p>
+                        <div class="orderDiv">
+                            <button type="button" class="order openModal">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
+                    <div class="productInfo">
+                        <p class="productPrice">220 баллов</p>
+                        <p class="productName">Футболка "Эволюционируй или сдохни сдохни</p>
+                        <p class="sizes">Размеры <span>S/M/L</span></p>
+                        <div class="orderDiv">
+                            <button type="button" class="order openModal">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
+                    <div class="productInfo">
+                        <p class="productPrice">220 баллов</p>
+                        <p class="productName">Футболка "Эволюционируй или сдохни сдохни</p>
+                        <p class="sizes">Размеры <span>S/M/L</span></p>
+                        <div class="orderDiv">
+                            <button type="button" class="order openModal">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
+                    <div class="productInfo">
+                        <p class="productPrice">220 баллов</p>
+                        <p class="productName">Футболка "Эволюционируй или сдохни сдохни</p>
+                        <p class="sizes">Размеры <span>S/M/L</span></p>
+                        <div class="orderDiv">
+                            <button type="button" class="order openModal">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
+                    <div class="productInfo">
+                        <p class="productPrice">220 баллов</p>
+                        <p class="productName">Футболка "Эволюционируй или сдохни сдохни</p>
+                        <p class="sizes">Размеры <span>S/M/L</span></p>
+                        <div class="orderDiv">
+                            <button type="button" class="order openModal">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
+                    <div class="productInfo">
+                        <p class="productPrice">220 баллов</p>
+                        <p class="productName">Футболка "Эволюционируй или сдохни сдохни</p>
+                        <p class="sizes">Размеры <span>S/M/L</span></p>
+                        <div class="orderDiv">
+                            <button type="button" class="order openModal">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
+                    <div class="productInfo">
+                        <p class="productPrice">220 баллов</p>
+                        <p class="productName">Футболка "Эволюционируй или сдохни сдохни</p>
+                        <p class="sizes">Размеры <span>S/M/L</span></p>
+                        <div class="orderDiv">
+                            <button type="button" class="order openModal">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
+                    <div class="productInfo">
+                        <p class="productPrice">220 баллов</p>
+                        <p class="productName">Футболка "Эволюционируй или сдохни сдохни</p>
+                        <p class="sizes">Размеры <span>S/M/L</span></p>
+                        <div class="orderDiv">
+                            <button type="button" class="order openModal">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
+                    <div class="productInfo">
+                        <p class="productPrice">220 баллов</p>
+                        <p class="productName">Футболка "Эволюционируй или сдохни сдохни</p>
+                        <p class="sizes">Размеры <span>S/M/L</span></p>
+                        <div class="orderDiv">
+                            <button type="button" class="order openModal">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
+                    <div class="productInfo">
+                        <p class="productPrice">220 баллов</p>
+                        <p class="productName">Футболка "Эволюционируй или сдохни сдохни</p>
+                        <p class="sizes">Размеры <span>S/M/L</span></p>
+                        <div class="orderDiv">
+                            <button type="button" class="order openModal">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="socialMedia">
+            <div class="companyName">
+                © Kolesa Group
+            </div>
+            <div class="socialMediaLinks">
+                <a href="https://www.instagram.com/kolesagroup/">
+                    <img src="src/img/InstagramLogo.svg" alt="Instagram" class="instagrammLogo logo" width="22" height="22">
+                </a>
+                <a href="https://www.youtube.com/channel/UC6o6waSdIvmIdvy7qTqxY9A">
+                    <img src="src/img/YouTubeLogo.svg" alt="Instagram" class="instagrammLogo logo" width="22" height="22">
+                </a>
+                <a href="https://vk.com/kolesakrishamarket">
+                    <img src="src/img/VKLogo.svg" alt="Instagram" class="VKLogo logo" width="22" height="22">
+                </a>
+            </div>
+        </div>
+        <div class="contactUs">
+            <div class="footer__text">
+                Есть идеи что улучшить? <br>Не знаешь, с кем решить проблему?
+            </div>
+            <div class="contactUsBtn">
+                <button type="button">Написать</button>
+            </div>
+        </div>
+    </footer>
+    <div class="modal hide">
         <div class="container">
             <div class="photo">
                 <div class="mainPhoto">
@@ -86,8 +316,9 @@
                     </div>
                 </div>
             </div>
-            <button type = "button" class="closeModal"><img src="src/img/close-btn.png" alt="Закрыть окно" width="32" height="32"></button>
+            <button type = "button" class="closeModal closeModalBtn"><img src="src/img/close-btn.png" alt="Закрыть окно" width="32" height="32"></button>
         </div>
     </div>
+    <script src="src/js/main.js" defer></script>
   </body>
 </html>
