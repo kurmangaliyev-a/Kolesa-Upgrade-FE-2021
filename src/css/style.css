@@ -411,11 +411,15 @@ footer .contactUsBtn button {
     display: inline-flex;
     border-radius: 8px;
     padding: 8px;
+    padding-left: 20px;
     background-color: #f2f2f3;
+    align-items: center;
 }
 
 .header .search input[type='search'] {
+    font-size: 18px;
     background-color: #f2f2f3;
+    line-height: 28px;
 }
 
 .header .search-icon {
