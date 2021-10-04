@@ -6,6 +6,7 @@ img {
 html,
 body {
     height: 100%;
+    color: #1c1819;
 }
 
 body {
@@ -372,6 +373,7 @@ footer .contactUsBtn button {
     line-height: 24px;
     display: flex;
     align-items: center;
+    white-space: nowrap;
 }
 
 .navigationList a:hover {
@@ -383,6 +385,7 @@ footer .contactUsBtn button {
     padding-left: 8px;
     color: #1c1819;
     text-decoration: none;
+    font-size: 16px;
     width: 100%;
 }
 
@@ -436,7 +439,7 @@ footer .contactUsBtn button {
     transition-duration: 0.4s;
 }
 
-.header .profile {
+.profile {
     display: flex;
     gap: 16px;
     cursor: pointer;
@@ -448,15 +451,27 @@ footer .contactUsBtn button {
     filter: brightness(110%);
 }
 
-.header .profileContent {
+.profileContent {
     display: grid;
 }
 
-.header .userPhoto {
+.navigation .profile {
+    display: none;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    align-items: center;
+}
+
+.navigation .profileContent {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.userPhoto {
     border-radius: 50%;
 }
 
-.header .profileContent p {
+.profileContent p {
     margin: 0;
 }
 
@@ -483,9 +498,21 @@ footer .contactUsBtn button {
 .actionBlocks {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: 40px;
     gap: 24px;
+}
+
+.actionBlocks .action {
+    width: 306px;
+    display: flex;
+    gap: 16px;
+    border-radius: 16px;
+    padding-left: 24px;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .actionBlocks .take {
@@ -498,19 +525,6 @@ footer .contactUsBtn button {
 
 .actionBlocks .donate {
     background: #e9f2fb;
-}
-
-.actionBlocks .action {
-    width: 306px;
-    height: 76px;
-    display: flex;
-    gap: 16px;
-    border-radius: 16px;
-    padding-left: 24px;
-    justify-content: flex-start;
-    align-items: center;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 .actionBlocks .actionText {
@@ -533,6 +547,7 @@ footer .contactUsBtn button {
     color: #2a81dd;
     outline: 1px solid rgba(28, 24, 25, 0.1);
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .hotBtns {
@@ -548,7 +563,7 @@ footer .contactUsBtn button {
 .products {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 24px;
     margin-bottom: 64px;
 }
@@ -602,7 +617,7 @@ footer .contactUsBtn button {
 .product .orderDiv {
     position: absolute;
     display: none;
-    width: 298px;
+    width: inherit;
     height: 44px;
     padding-left: 16px;
     padding-right: 16px;
