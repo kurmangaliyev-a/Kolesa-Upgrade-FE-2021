@@ -1,0 +1,147 @@
+@media (max-width: 1100px) {
+    .content {
+        margin-right: 24px;
+    }
+
+    .actionBlocks .action {
+        width: 288px;
+    }
+
+    .goodImg {
+        width: 312px;
+        height: 312px;
+    }
+
+    .product .productInfo {
+        width: 280px;
+    }
+
+    .navigation {
+        padding: 24px;
+        width: auto;
+    }
+
+    .header {
+        padding-top: 24px;
+        padding-right: 24px;
+    }
+
+    .navigation .logoKolesa {
+        width: 148px;
+    }
+
+    .navigation .logoKolesa img {
+        width: 148px;
+    }
+}
+
+@media (max-width: 880px) {
+    .actionBlocks .action {
+        width: 100%;
+    }
+
+    .actionBlocks .actionText {
+        font-size: 16px;
+    }
+
+    .actionLogo {
+        height: 38px;
+        width: 45px;
+    }
+
+    .goodImg {
+        width: 212px;
+        height: 212px;
+    }
+
+    .product .productInfo {
+        width: 180px;
+    }
+
+    .search {
+        width: 200px;
+    }
+
+    .header .search-field {
+        width: 180px;
+    }
+}
+
+@media (max-width: 680px) {
+    .header .profile {
+        display: none;
+    }
+
+    .goodImg {
+        width: 312px;
+        height: 312px;
+    }
+
+    .product .productInfo {
+        width: 280px;
+    }
+
+    .navigation {
+        padding: 24px;
+        width: auto;
+    }
+
+    .main {
+        padding-left: 24px;
+    }
+
+    .nav .profile {
+        display: flex;
+    }
+
+    .nav {
+        position: fixed;
+        display: none;
+    }
+}
+
+@media (max-width: 620px) {
+    footer .contactUs {
+        display: flex;
+        gap: 8px;
+    }
+
+    footer .contactUsBtn button {
+        width: 100%;
+        padding: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer .contactUs {
+        display: flex;
+        flex-direction: column;
+        width: 344px;
+        padding: 8px;
+        gap: 8px;
+    }
+
+    footer .footer__text {
+        font-size: 12px;
+    }
+
+    .nav__active .darkBackground {
+        background-color: rgba(28, 24, 25, 0.6);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .navigation {
+        padding: 16px;
+        width: 290px;
+        height: 100vh;
+    }
+
+    .header {
+        padding-top: 24px;
+    }
+}

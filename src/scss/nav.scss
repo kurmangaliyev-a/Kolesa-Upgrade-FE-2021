@@ -1,0 +1,58 @@
+
+.main {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.navigation {
+    padding: 32px;
+    width: 248px;
+    background-color: #fff;
+}
+
+.logoKolesa {
+    height: 40px;
+    margin-top: 8px;
+    align-content: center;
+}
+
+.imgLogo {
+    margin-bottom: 24px;
+}
+
+.navigationList {
+    text-decoration: none;
+    padding: 0;
+}
+
+.navigationList li {
+    height: 44px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.navigationList a {
+    padding-left: 8px;
+    color: #1c1819;
+    text-decoration: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+.navigationList a:hover {
+    background-color: #ddd;
+    filter: brightness(150%);
+}
+
+.nav__active_li {
+    border-left: 4px solid #2a81dd;
+}
+
+.nav__active_li a {
+    padding-left: 4px;
+}
