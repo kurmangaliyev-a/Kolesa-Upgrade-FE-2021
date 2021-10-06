@@ -1,50 +1,11 @@
 .footer {
     @include flex(24px,space-between,center);
 
-    color: $white;
-    background-color: $black;
-}
-
-.socialMedia {
-    background-color: $black;
-    padding: 8px;
-    display: grid;
-    gap: 8px;
-
-    &__link {
-        @include flex();
-
-        gap: 8px;
-    }
-
-    &__companyName {
-        color: $white;
-        font-size: 16px;
-        line-height: 24px;
-    }
-}
-
-.contactUs {
-    @include flex();
-
-    padding-left: 8px;
-    padding-right: 8px;
-    gap: 32px;
-    background-color: $black;
-
-    &__text {
-        color: $white;
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-    &__btn-block {
-        @include flex(0,center,center);
-    }
+    color: $white-primary;
+    background-color: $footer-bgc;
 
     &__btn {
-        background-color: $white;
-        color: $blue;
+        color: $blue-primary;
         padding: 8px;
         width: 150px;
         height: 36px;
@@ -54,5 +15,38 @@
         /* opacity: 0.9; не могу понять откуда в фигме прозрачность */
         border-radius: 8px;
         cursor: pointer;
+    }
+
+    &__link {
+        @include flex();
+
+        gap: 8px;
+    }
+
+    &__companyName {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 8px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    &__btn-block {
+        @include flex(0,center,center);
+    }
+
+    &__socialMedia {
+        padding: 8px;
+    }
+
+    &__contactUs {
+        @include flex();
+
+        padding-left: 8px;
+        padding-right: 8px;
+        gap: 32px;
     }
 }
