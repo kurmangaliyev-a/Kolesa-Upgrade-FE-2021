@@ -100,31 +100,7 @@
     }
 }
 
-@media (max-width: 620px) {
-    footer .contactUs {
-        display: flex;
-        gap: 8px;
-    }
-
-    footer .contactUsBtn button {
-        width: 100%;
-        padding: 4px;
-    }
-}
-
 @media (max-width: 480px) {
-    footer .contactUs {
-        display: flex;
-        flex-direction: column;
-        width: 344px;
-        padding: 8px;
-        gap: 8px;
-    }
-
-    footer .footer__text {
-        font-size: 12px;
-    }
-
     .nav__active .darkBackground {
         background-color: rgba(28, 24, 25, 0.6);
         position: fixed;
