@@ -17,113 +17,14 @@
     &__hotBtns {
         margin-bottom: 16px;
     }
-}
 
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 24px;
-    margin-bottom: 64px;
-}
+    &__products {
+        @include flex(0,space-around);
 
-.product {
-    border-radius: 8px 8px 0 0;
-}
-
-.product:hover {
-    box-shadow: 0 2px 10px 0 #1c18191a;
-}
-
-.product .goodImg {
-    border-radius: 8px 8px 0 0;
-}
-
-.product .productPrice {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-    color: #2a81dd;
-    margin-top: 0;
-    margin-bottom: 8px;
-}
-
-.product .productInfo {
-    width: 298px;
-    padding: 16px;
-}
-
-.product .productName {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    margin-top: 0;
-    margin-bottom: 4px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-right: 24px;
-    padding-right: 4px;
-}
-
-.product .sizes {
-    font-size: 14px;
-    line-height: 24px;
-    color: #888b94;
-    margin-bottom: 32px;
-}
-
-.product .orderDiv {
-    position: absolute;
-    display: none;
-    width: inherit;
-    height: 44px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 16px;
-    padding-top: 0;
-    border-radius: 0 0 8px 8px;
-    background-color: #fff;
-}
-
-.product .order {
-    border-radius: 8px;
-    width: 100%;
-    background: #2a81dd;
-    box-shadow: 0 2px 4px #000/*rgba(28, 24, 25, 0.1);*/;
-    color: #fff;
-    border: none;
-    height: 44px;
-    cursor: pointer;
-}
-
-.product .order:hover {
-    filter: brightness(130%);
-}
-
-.product .order:active {
-    outline: 1px solid rgba(28, 24, 25, 0.5);
-}
-
-.product:hover .orderDiv {
-    display: block;
-    margin-left: -16px;
-    box-shadow: 0 6px 10px 0 #1c18191a;
-}
-
-.product .newProduct {
-    width: 38px;
-    height: 20px;
-    position: absolute;
-    margin-top: -36px;
-    margin-left: 16px;
-    background-color: #64bd38;
-    border-radius: 4px;
-    color: #fff;
-    text-align: center;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+        margin-bottom: 64px;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
 }
 
 * {
