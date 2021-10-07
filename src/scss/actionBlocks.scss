@@ -37,3 +37,28 @@
         font-size: 20px;
     }
 }
+
+@media (max-width: 1100px) {
+    .actionBlocks {
+        &__item {
+            width: 288px;
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .actionBlocks {
+        &__item {
+            width: 100%;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+
+        &__logo {
+            height: 38px;
+            width: 45px;
+        }
+    }
+}

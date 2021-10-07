@@ -53,7 +53,7 @@
         background-color: #fff;
     }
 
-    &__openModal {
+    &__open-modal {
         border-radius: 8px;
         width: 100%;
         background: #2a81dd;
@@ -95,5 +95,38 @@
 
     &:hover {
         box-shadow: 0 2px 10px 0 $box-shadow-color;
+    }
+}
+
+@media (max-width: 1100px) {
+    .goodImg {
+        width: 312px;
+        height: 312px;
+    }
+
+    .product .productInfo {
+        width: 280px;
+    }
+}
+
+@media (max-width: 880px) {
+    .goodImg {
+        width: 212px;
+        height: 212px;
+    }
+
+    .product .productInfo {
+        width: 180px;
+    }
+}
+
+@media (max-width: 680px) {
+    .goodImg {
+        width: 312px;
+        height: 312px;
+    }
+
+    .product .productInfo {
+        width: 280px;
     }
 }
