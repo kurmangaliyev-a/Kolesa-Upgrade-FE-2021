@@ -1,55 +1,18 @@
 
 .content {
     width: 100%;
-}
 
-.banner {
-    width: 100%;
-    border-radius: 8px;
-    display: block;
-    margin-bottom: 24px;
-}
+    &__header {
+        margin-bottom: 24px;
+    }
 
-.actionBlocks {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 40px;
-    gap: 24px;
-}
+    &__banner {
+        margin-bottom: 24px;
+    }
 
-.actionBlocks .action {
-    width: 306px;
-    display: flex;
-    gap: 16px;
-    border-radius: 16px;
-    padding-left: 24px;
-    justify-content: flex-start;
-    align-items: center;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.actionBlocks .take {
-    background: #eff8eb;
-}
-
-.actionBlocks .howToTake {
-    background: #fffae7;
-}
-
-.actionBlocks .donate {
-    background: #e9f2fb;
-}
-
-.actionBlocks .actionText {
-    font-weight: 600;
-    font-size: 20px;
-    color: #1c1819;
-}
-
-.actionBlocks .action:hover {
-    background-color: #00f500;
+    &__actionBlocks {
+        margin-bottom: 40px;
+    }
 }
 
 .hotBtns label {
@@ -184,4 +147,10 @@
 
 * {
     /* outline: 1px solid red; */
+}
+
+@media (max-width: 1100px) {
+    .content {
+        margin-right: 24px;
+    }
 }

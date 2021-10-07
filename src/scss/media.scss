@@ -1,8 +1,4 @@
 @media (max-width: 1100px) {
-    .content {
-        margin-right: 24px;
-    }
-
     .actionBlocks .action {
         width: 288px;
     }
@@ -14,11 +10,6 @@
 
     .product .productInfo {
         width: 280px;
-    }
-
-    .header {
-        padding-top: 24px;
-        padding-right: 24px;
     }
 }
 
@@ -44,21 +35,9 @@
     .product .productInfo {
         width: 180px;
     }
-
-    .search {
-        width: 200px;
-    }
-
-    .header .search-field {
-        width: 180px;
-    }
 }
 
 @media (max-width: 680px) {
-    .header .profile {
-        display: none;
-    }
-
     .goodImg {
         width: 312px;
         height: 312px;
@@ -66,15 +45,5 @@
 
     .product .productInfo {
         width: 280px;
-    }
-
-    .main {
-        padding-left: 24px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header {
-        padding-top: 24px;
     }
 }

@@ -2,7 +2,7 @@
     &__main {
         padding: 32px;
         width: 248px;
-        background-color: #fff;
+        background-color: $white-primary;
     }
 
     &__logoKolesa {
@@ -37,19 +37,29 @@
 
     &__link {
         padding-left: 8px;
-        color: #1c1819;
         text-decoration: none;
         font-size: 16px;
         width: 100%;
 
         &:hover {
-            background-color: #ddd;
             filter: brightness(150%);
         }
     }
 
     &__profile {
         display: none;
+        margin-top: 36px;
+        margin-bottom: 36px;
+        align-items: center;
+    }
+
+    &__profileContent {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    &__userPhoto {
+        border-radius: 50%;
     }
 }
 
