@@ -13,29 +13,10 @@
     &__actionBlocks {
         margin-bottom: 40px;
     }
-}
 
-.hotBtns label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    border-radius: 8px;
-    padding: 8px 24px;
-    color: #2a81dd;
-    outline: 1px solid rgba(28, 24, 25, 0.1);
-    cursor: pointer;
-    white-space: nowrap;
-}
-
-.hotBtns {
-    margin-bottom: 16px;
-}
-
-.hotBtns input:checked + label {
-    background-color: #d6ecfb;
-    outline: 1px solid #d6ecfb;
-    color: #1c1819;
+    &__hotBtns {
+        margin-bottom: 16px;
+    }
 }
 
 .products {

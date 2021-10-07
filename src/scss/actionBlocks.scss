@@ -16,25 +16,24 @@
         cursor: pointer;
 
         &--take {
-            background: #eff8eb;
+            background: $take-balls-bgc;
         }
 
         &--howToTake {
-            background: #fffae7;
+            background: $how-to-take-balls-bgc;
         }
 
         &--donate {
-            background: #e9f2fb;
+            background: $donate-balls-bgc;
         }
 
         &:hover {
-            background-color: #00f500;
+            background-color: $action-bgc-toxic;
         }
     }
 
     &__text {
         font-weight: 600;
         font-size: 20px;
-        color: #1c1819;
     }
 }

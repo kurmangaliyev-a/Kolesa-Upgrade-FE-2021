@@ -153,16 +153,14 @@
 }
 
 .colorList,
-.sizeList,
-.hotBtns {
+.sizeList {
     display: flex;
     gap: 8px;
     margin-bottom: 24px;
 }
 
 .colorList input,
-.sizeList input,
-.hotBtns input {
+.sizeList input {
     display: none;
 }
 
