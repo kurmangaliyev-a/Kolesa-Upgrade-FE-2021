@@ -1,0 +1,11 @@
+
+.main {
+    @include flex();
+
+    max-width: 1440px;
+    margin: 0 auto;
+
+    &__content {
+        margin-right: 88px;
+    }
+}
