@@ -1,0 +1,123 @@
+.nav {
+    &__main {
+        padding: 32px;
+        width: 248px;
+        background-color: $white-primary;
+    }
+
+    &__logoKolesa {
+        height: 40px;
+        margin-top: 8px;
+        align-content: center;
+    }
+
+    &__imgLogo {
+        margin-bottom: 24px;
+    }
+
+    &__list {
+        text-decoration: none;
+        padding: 0;
+    }
+
+    &__li {
+        @include flex(0,normal,center);
+
+        height: 44px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        white-space: nowrap;
+
+        &--active {
+            border-left: 4px solid $blue-primary;
+            margin-left: -4px;
+        }
+    }
+
+    &__link {
+        padding-left: 8px;
+        text-decoration: none;
+        font-size: 16px;
+        width: 100%;
+
+        &:hover {
+            filter: brightness(150%);
+        }
+    }
+
+    &__profile {
+        display: none;
+        margin-top: 36px;
+        margin-bottom: 36px;
+        align-items: center;
+    }
+
+    &__profileContent {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    &__userPhoto {
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .nav {
+        &__main {
+            padding: 24px;
+            width: auto;
+        }
+
+        &__imgLogo {
+            width: 148px;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .nav {
+        position: fixed;
+        display: none;
+
+        &__main {
+            padding: 24px;
+            width: auto;
+        }
+
+        &__profile {
+            @include flex();
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        &__darkBackground {
+            background-color: rgba(28, 24, 25, 0.6);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        &__main {
+            padding: 16px;
+            width: 290px;
+            height: 100vh;
+        }
+    }
+
+    .nav__active .darkBackground .navigation {
+        padding: 16px;
+        width: 290px;
+        height: 100vh;
+    }
+
+    .header {
+        padding-top: 24px;
+    }
+}

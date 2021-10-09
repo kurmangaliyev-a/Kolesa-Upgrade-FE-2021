@@ -1,0 +1,17 @@
+
+.main {
+    @include flex();
+
+    max-width: 1440px;
+    margin: 0 auto;
+
+    &__content {
+        margin-right: 88px;
+    }
+}
+
+@media (max-width: 680px) {
+    .main {
+        padding-left: 24px;
+    }
+}

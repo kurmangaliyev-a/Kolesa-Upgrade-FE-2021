@@ -1,0 +1,26 @@
+.hotBtns {
+    @include flex();
+
+    gap: 8px;
+
+    &__label {
+        @include flex(8px 24px, center, center);
+
+        font-size: 14px;
+        border-radius: 8px;
+        color: $blue-primary;
+        outline: 1px solid rgba(28, 24, 25, 0.1);
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+    &__item {
+        display: none;
+
+        &:checked + label {
+            background-color: $checked-tabs-color;
+            outline: 1px solid $checked-tabs-color;
+            color: $text-black;
+        }
+    }
+}

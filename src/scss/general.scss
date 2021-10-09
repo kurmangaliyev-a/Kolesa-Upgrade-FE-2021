@@ -1,0 +1,31 @@
+@mixin flex($padding : 0, $justify-content : normal, $align-items : normal) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    padding: $padding;
+}
+
+.hide {
+    display: none;
+}
+
+img {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    color: $text-black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: $text-black;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr max-content;
+}

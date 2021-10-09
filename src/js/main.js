@@ -1,24 +1,31 @@
+import '../scss/style.scss';
+
 document.querySelector('.header .search').addEventListener('click', (e) => {
-    // if(e.target)
     if (!e.target.classList.contains('search-icon')) {
         document.querySelector('.search input[type="search"]').focus();
     }
 });
 
 function productModalWindow() {
-    const elements = document.querySelectorAll('.product .openModal');
+    const elements = document.querySelectorAll('.product__open-modal');
     const modal = document.querySelector('.modal');
-    const closeModal = document.querySelector('.closeModal');
+    const closeModal = document.querySelector('.modal__close');
 
     elements.forEach((elm) => {
         elm.addEventListener('click', () => {
-            modal.classList.remove('hide');
+            modal.classList.remove('modal--hide');
             document.body.style.overflow = 'hidden';
         });
     });
     closeModal.addEventListener('click', () => {
-        modal.classList.add('hide');
+        modal.classList.add('modal--hide');
         document.body.style.overflow = '';
+    });
+    modal.addEventListener('click', (e) => {
+        if (e.target.classList.contains('modal')) {
+            modal.classList.add('modal--hide');
+            document.body.style.overflow = '';
+        }
     });
 }
 

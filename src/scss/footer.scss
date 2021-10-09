@@ -1,0 +1,78 @@
+.footer {
+    @include flex(24px,space-between,center);
+
+    color: $white-primary;
+    background-color: $footer-bgc;
+
+    &__btn {
+        color: $blue-primary;
+        padding: 8px;
+        width: 150px;
+        height: 36px;
+        font-size: 14px;
+        text-align: center;
+
+        /* opacity: 0.9; не могу понять откуда в фигме прозрачность */
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    &__link {
+        @include flex();
+
+        gap: 8px;
+    }
+
+    &__companyName {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 8px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    &__btn-block {
+        @include flex(0,center,center);
+    }
+
+    &__socialMedia {
+        padding: 8px;
+    }
+
+    &__contactUs {
+        @include flex();
+
+        padding-left: 8px;
+        padding-right: 8px;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 620px) {
+    .footer {
+        &__contactUs {
+            display: grid;
+            gap: 8px;
+        }
+
+        &__btn {
+            width: 100%;
+            padding: 4px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        &__contact-us {
+            @include flex(8px);
+
+            width: 344px;
+            padding: 8px;
+            gap: 8px;
+        }
+    }
+}

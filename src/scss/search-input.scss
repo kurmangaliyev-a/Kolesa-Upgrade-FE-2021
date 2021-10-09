@@ -1,0 +1,41 @@
+.search {
+    display: inline-flex;
+    border-radius: 8px;
+    padding: 8px;
+    padding-left: 20px;
+    background-color: $search-bgc;
+    align-items: center;
+
+    &__field {
+        font-size: 18px;
+        background-color: $search-bgc;
+        line-height: 28px;
+        width: 300px;
+        border: 0;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:focus + .search__icon {
+            transform: rotate(360deg);
+            transition-duration: 0.4s;
+        }
+    }
+
+    &__icon {
+        margin-right: 10px;
+        margin-top: 4px;
+        order: -1;
+    }
+}
+
+@media (max-width: 880px) {
+    .search {
+        width: 200px;
+
+        &__field {
+            width: 180px;
+        }
+    }
+}

@@ -7,223 +7,182 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <!--styles-->
-    <link rel="stylesheet" href="src/css/Normalize.css">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/media.css">
     <!--favicon-->
     <link type="image/x-icon" href="src/img/favicon.ico" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kolesa Group</title>
   </head>
-  <body>
+  <body class='body'>
     <section class="main">
-        <div class="nav nav__active">
-            <div class="darkBackground">
-                <div class="navigation">
-                    <div class="logoKolesa">
-                        <img src="src/img/logo.svg" alt="Логотип" width="215" height="32" class="imgLogo">
+        <div class="nav">
+            <div class="nav__darkBackground">
+                <div class="nav__main">
+                    <div class="nav__logoKolesa">
+                        <img src="src/img/logo.svg" alt="Логотип" width="215" height="32" class="nav__imgLogo">
                     </div>
-                    <a class="profile">
-                        <img src="src/img/profile.png" class="userPhoto" alt="Профиль" height="52" width="52">
-                        <div href="#" class="profileContent">
-                            <p class="userName">Абдурахман Калиакпаров</p>
+                    <a class="nav__profile">
+                        <img src="src/img/profile.png" class="nav__userPhoto" alt="Профиль" height="52" width="52">
+                        <div href="#" class="nav__profileContent">
+                            <p class="nav__userName">Абдурахман Калиакпаров</p>
                         </div>
                     </a>
-                    <ul class="navigationList">
-                        <li><a href="#">Оргсхема</a></li>
-                        <li><a href="#">Kolesa Team</a></li>
-                        <li class="nav__active_li"><a href="#">Kolesa Shop</a></li>
-                        <li><a href="#">Картина компании</a></li>
-                        <li><a href="#">Новости</a></li>
-                        <li><a href="#">Education</a></li>
-                        <li><a href="#">Guidelines</a></li>
-                        <li><a href="#">Библиотека</a></li>
-                        <li><a href="#">FAQ</a></li>
+                    <ul class="nav__list">
+                        <li class="nav__li"><a  class="nav__link" href="#">Kolesa Team</a></li>
+                        <li class="nav__li"><a  class="nav__link" href="#">Оргсхема</a></li>
+                        <li class="nav__li nav__li--active"><a  class="nav__link" href="#">Kolesa Shop</a></li>
+                        <li class="nav__li"><a  class="nav__link" href="#">Картина компании</a></li>
+                        <li class="nav__li"><a  class="nav__link" href="#">Новости</a></li>
+                        <li class="nav__li"><a  class="nav__link" href="#">Education</a></li>
+                        <li class="nav__li"><a  class="nav__link" href="#">Guidelines</a></li>
+                        <li class="nav__li"><a  class="nav__link" href="#">Библиотека</a></li>
+                        <li class="nav__li"><a  class="nav__link" href="#">FAQ</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="content">
-            <div class="header">
+        <div class="main__content content">
+            <div class="content__header header">
                 <div class="search">
-                    <input type="search" class="search-field" placeholder="Поиск">
-                    <img src="src/img/search.svg" alt="Поиск" class="search-icon" width="16" height="16">
-              </div>
+                    <input type="search" class="search__field" placeholder="Поиск">
+                    <img src="src/img/search.svg" alt="Поиск" class="search__icon" width="16" height="16">
+                </div>
                 <a class="profile">
-                    <img src="src/img/profile.png" class="userPhoto" alt="Профиль" height="44" width="44">
-                    <div href="#" class="profileContent">
-                        <p class="userName">Абдурахман Калиакпаров</p>
-                        <p class="currentBalance"><span>300</span> баллов</p>
+                    <img src="src/img/profile.png" class="profile__userPhoto" alt="Профиль" height="44" width="44">
+                    <div href="#" class="profile__content">
+                        <p class="profile__name">Абдурахман Калиакпаров</p>
+                        <p class="profile__balance"><span>300</span> баллов</p>
                     </div>
                 </a>
             </div>
-            <img src="src/img/banner.png" alt="банер" class="banner" width="1038">
-            <div class="actionBlocks">
-                <a href="#" class="take action">
-                    <img src="src/img/plus.svg" alt="действие" class="actionLogo" width="48" height="56">
-                    <p class="actionText">Получить балы</p>
+            <img src="src/img/banner.png" alt="банер" class="banner content__banner" width="1038">
+            <div class="content__actionBlocks actionBlocks">
+                <a href="#" class="actionBlocks__item actionBlocks__item--take">
+                    <img src="src/img/plus.svg" alt="действие" class="actionBlocks__logo" width="48" height="56">
+                    <p class="actionBlocks__text">Получить балы</p>
                 </a>
-                <a href="#" class="howToTake action">
-                    <img src="src/img/question.svg" alt="действие" class="actionLogo" width="48" height="56">
-                    <p class="actionText">Как получить баллы</p>
+                <a href="#" class="actionBlocks__item-howToTake actionBlocks__item">
+                    <img src="src/img/question.svg" alt="действие" class="actionBlocks__logo" width="48" height="56">
+                    <p class="actionBlocks__text">Как получить баллы</p>
                 </a>
-                <a href="#" class="donate action">
-                    <img src="src/img/gift.svg" alt="действие" class="actionLogo" width="48" height="56">
-                    <p class="actionText">Подарить баллы</p>
+                <a href="#" class="actionBlocks__item-donate actionBlocks__item">
+                    <img src="src/img/gift.svg" alt="действие" class="actionBlocks__logo" width="48" height="56">
+                    <p class="actionBlocks__text">Подарить баллы</p>
                 </a>
             </div>
-            <div class="hotBtns">
-                <input type="radio" class="hotBtnItem" id="hotBtn-1" name="hotBtn" checked>
-                <label for="hotBtn-1" class="botBtnLabel sizeBlue">Все товары</label>
-                <input type="radio" class="hotBtnItem" id="hotBtn-2" name="hotBtn">
-                <label for="hotBtn-2" class="botBtnLabel sizeBeige">Одежда</label>
-                <input type="radio" class="hotBtnItem" id="hotBtn-3" name="hotBtn">
-                <label for="hotBtn-3" class="botBtnLabel sizeGrey">Аксессуары</label>
+            <div class="hotBtns content__hotBtns">
+                <input type="radio" class="hotBtns__item" id="hotBtn-1" name="hotBtn" checked>
+                <label for="hotBtn-1" class="hotBtns__label sizeBlue">Все товары</label>
+                <input type="radio" class="hotBtns__item" id="hotBtn-2" name="hotBtn">
+                <label for="hotBtn-2" class="hotBtns__label sizeBeige">Одежда</label>
+                <input type="radio" class="hotBtns__item" id="hotBtn-3" name="hotBtn">
+                <label for="hotBtn-3" class="hotBtns__label sizeGrey">Аксессуары</label>
             </div>
-            <div class="products">
+            <div class="products content__products">
                 <div class="product">
-                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
-                    <div class="newProduct">NEW</div>
-                    <div class="productInfo">
-                        <p class="productPrice">220 баллов</p>
-                        <p class="productName">Футболка "Эволюционируй или сдохни сдохни</p>
-                        <p class="sizes">Размеры <span>S/M/L</span></p>
-                        <div class="orderDiv">
-                            <button type="button" class="order openModal">Заказать</button>
+                    <img src="src/img/T-shirt.png" alt="Футболка" class="product__mainPhoto" width="330" height="330">
+                    <div class="product__new-product">NEW</div>
+                    <div class="product__info">
+                        <p class="product__price">220 баллов</p>
+                        <p class="product__name">Футболка "Эволюционируй или сдохни сдохни</p>
+                        <p class="product__sizes">Размеры <span>S/M/L</span></p>
+                        <div class="product__order-div">
+                            <button type="button" class="product__open-modal">Заказать</button>
                         </div>
                     </div>
                 </div>
                 <div class="product">
-                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
-                    <div class="productInfo">
-                        <p class="productPrice">220 баллов</p>
-                        <p class="productName">Футболка "Эволюционируй или сдохни сдохнисдохнисдохниФутболка "Эволюционируй или сдохни сдохнисдохнисдохни</p>
-                        <p class="sizes">Размеры <span>S/M/L</span></p>
-                        <div class="orderDiv">
-                            <button type="button" class="order openModal">Заказать</button>
+                    <img src="src/img/T-shirt.png" alt="Футболка" class="product__mainPhoto" width="330" height="330">
+                    <div class="product__new-product">NEW</div>
+                    <div class="product__info">
+                        <p class="product__price">220 баллов</p>
+                        <p class="product__name">Футболка "Эволюционируй или сдохни сдохни</p>
+                        <p class="product__sizes">Размеры <span>S/M/L</span></p>
+                        <div class="product__order-div">
+                            <button type="button" class="product__open-modal">Заказать</button>
                         </div>
                     </div>
                 </div>
                 <div class="product">
-                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
-                    <div class="productInfo">
-                        <p class="productPrice">220 баллов</p>
-                        <p class="productName">Футболка "Эволюционируй или сдохни сдохни</p>
-                        <p class="sizes">Размеры <span>S/M/L</span></p>
-                        <div class="orderDiv">
-                            <button type="button" class="order openModal">Заказать</button>
+                    <img src="src/img/T-shirt.png" alt="Футболка" class="product__mainPhoto" width="330" height="330">
+                    <div class="product__new-product">NEW</div>
+                    <div class="product__info">
+                        <p class="product__price">220 баллов</p>
+                        <p class="product__name">Футболка "Эволюционируй или сдохни сдохни</p>
+                        <p class="product__sizes">Размеры <span>S/M/L</span></p>
+                        <div class="product__order-div">
+                            <button type="button" class="product__open-modal">Заказать</button>
                         </div>
                     </div>
                 </div>
                 <div class="product">
-                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
-                    <div class="productInfo">
-                        <p class="productPrice">220 баллов</p>
-                        <p class="productName">Футболка "Эволюционируй или сдохни сдохни</p>
-                        <p class="sizes">Размеры <span>S/M/L</span></p>
-                        <div class="orderDiv">
-                            <button type="button" class="order openModal">Заказать</button>
+                    <img src="src/img/T-shirt.png" alt="Футболка" class="product__mainPhoto" width="330" height="330">
+                    <div class="product__new-product">NEW</div>
+                    <div class="product__info">
+                        <p class="product__price">220 баллов</p>
+                        <p class="product__name">Футболка "Эволюционируй или сдохни сдохни</p>
+                        <p class="product__sizes">Размеры <span>S/M/L</span></p>
+                        <div class="product__order-div">
+                            <button type="button" class="product__open-modal">Заказать</button>
                         </div>
                     </div>
                 </div>
                 <div class="product">
-                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
-                    <div class="productInfo">
-                        <p class="productPrice">220 баллов</p>
-                        <p class="productName">Футболка "Эволюционируй или сдохни сдохни</p>
-                        <p class="sizes">Размеры <span>S/M/L</span></p>
-                        <div class="orderDiv">
-                            <button type="button" class="order openModal">Заказать</button>
+                    <img src="src/img/T-shirt.png" alt="Футболка" class="product__mainPhoto" width="330" height="330">
+                    <div class="product__new-product">NEW</div>
+                    <div class="product__info">
+                        <p class="product__price">220 баллов</p>
+                        <p class="product__name">Футболка "Эволюционируй или сдохни сдохни</p>
+                        <p class="product__sizes">Размеры <span>S/M/L</span></p>
+                        <div class="product__order-div">
+                            <button type="button" class="product__open-modal">Заказать</button>
                         </div>
                     </div>
                 </div>
                 <div class="product">
-                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
-                    <div class="productInfo">
-                        <p class="productPrice">220 баллов</p>
-                        <p class="productName">Футболка "Эволюционируй или сдохни сдохни</p>
-                        <p class="sizes">Размеры <span>S/M/L</span></p>
-                        <div class="orderDiv">
-                            <button type="button" class="order openModal">Заказать</button>
+                    <img src="src/img/T-shirt.png" alt="Футболка" class="product__mainPhoto" width="330" height="330">
+                    <div class="product__new-product">NEW</div>
+                    <div class="product__info">
+                        <p class="product__price">220 баллов</p>
+                        <p class="product__name">Футболка "Эволюционируй или сдохни сдохни</p>
+                        <p class="product__sizes">Размеры <span>S/M/L</span></p>
+                        <div class="product__order-div">
+                            <button type="button" class="product__open-modal">Заказать</button>
                         </div>
                     </div>
                 </div>
                 <div class="product">
-                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
-                    <div class="productInfo">
-                        <p class="productPrice">220 баллов</p>
-                        <p class="productName">Футболка "Эволюционируй или сдохни сдохни</p>
-                        <p class="sizes">Размеры <span>S/M/L</span></p>
-                        <div class="orderDiv">
-                            <button type="button" class="order openModal">Заказать</button>
+                    <img src="src/img/T-shirt.png" alt="Футболка" class="product__mainPhoto" width="330" height="330">
+                    <div class="product__new-product">NEW</div>
+                    <div class="product__info">
+                        <p class="product__price">220 баллов</p>
+                        <p class="product__name">Футболка "Эволюционируй или сдохни сдохни</p>
+                        <p class="product__sizes">Размеры <span>S/M/L</span></p>
+                        <div class="product__order-div">
+                            <button type="button" class="product__open-modal">Заказать</button>
                         </div>
                     </div>
                 </div>
                 <div class="product">
-                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
-                    <div class="productInfo">
-                        <p class="productPrice">220 баллов</p>
-                        <p class="productName">Футболка "Эволюционируй или сдохни сдохни</p>
-                        <p class="sizes">Размеры <span>S/M/L</span></p>
-                        <div class="orderDiv">
-                            <button type="button" class="order openModal">Заказать</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
-                    <div class="productInfo">
-                        <p class="productPrice">220 баллов</p>
-                        <p class="productName">Футболка "Эволюционируй или сдохни сдохни</p>
-                        <p class="sizes">Размеры <span>S/M/L</span></p>
-                        <div class="orderDiv">
-                            <button type="button" class="order openModal">Заказать</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
-                    <div class="productInfo">
-                        <p class="productPrice">220 баллов</p>
-                        <p class="productName">Футболка "Эволюционируй или сдохни сдохни</p>
-                        <p class="sizes">Размеры <span>S/M/L</span></p>
-                        <div class="orderDiv">
-                            <button type="button" class="order openModal">Заказать</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
-                    <div class="productInfo">
-                        <p class="productPrice">220 баллов</p>
-                        <p class="productName">Футболка "Эволюционируй или сдохни сдохни</p>
-                        <p class="sizes">Размеры <span>S/M/L</span></p>
-                        <div class="orderDiv">
-                            <button type="button" class="order openModal">Заказать</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="src/img/T-shirt.png" alt="Футболка" class="goodImg" width="330" height="330">
-                    <div class="productInfo">
-                        <p class="productPrice">220 баллов</p>
-                        <p class="productName">Футболка "Эволюционируй или сдохни сдохни</p>
-                        <p class="sizes">Размеры <span>S/M/L</span></p>
-                        <div class="orderDiv">
-                            <button type="button" class="order openModal">Заказать</button>
+                    <img src="src/img/T-shirt.png" alt="Футболка" class="product__mainPhoto" width="330" height="330">
+                    <div class="product__new-product">NEW</div>
+                    <div class="product__info">
+                        <p class="product__price">220 баллов</p>
+                        <p class="product__name">Футболка "Эволюционируй или сдохни сдохни</p>
+                        <p class="product__sizes">Размеры <span>S/M/L</span></p>
+                        <div class="product__order-div">
+                            <button type="button" class="product__open-modal">Заказать</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer>
-        <div class="socialMedia">
-            <div class="companyName">
+    <footer class="footer">
+        <div class="footer__socialMedia">
+            <div class="footer__companyName">
                 © Kolesa Group
             </div>
-            <div class="socialMediaLinks">
+            <div class="footer__link">
                 <a href="https://www.instagram.com/kolesagroup/">
                     <img src="src/img/InstagramLogo.svg" alt="Instagram" class="instagrammLogo logo" width="22" height="22">
                 </a>
@@ -235,90 +194,88 @@
                 </a>
             </div>
         </div>
-        <div class="contactUs">
+        <div class="footer__contactUs">
             <div class="footer__text">
                 Есть идеи что улучшить? <br>Не знаешь, с кем решить проблему?
             </div>
-            <div class="contactUsBtn">
-                <button type="button">Написать</button>
-            </div>
+            <button type="button" class="footer__btn">Написать</button>
         </div>
     </footer>
-    <div class="modal hide">
-        <div class="container">
-            <div class="photo">
-                <div class="mainPhoto">
+    <div class="modal modal--hide" data-modal="close">
+        <div class="modal__container">
+            <div class="photo-block">
+                <div class="modal__mainPhoto">
                     <img src="src/img/mainPhoto.png" alt="Главное фото" width="330" height="330" class="mainPhotoImg">
                 </div>
-                <div class="otherPhotos">
-                    <img src="src/img/photo3.png" alt="прочее Фото" width="50" height="50">
-                    <img src="src/img/photo1.png" alt="прочее Фото" width="50" height="50" class="imgActive">
-                    <img src="src/img/photo2.png" alt="прочее Фото" width="50" height="50">
+                <div class="modal__other-photos-block">
+                    <img src="src/img/photo3.png" alt="прочее Фото" width="50" height="50" class="modal__other-photos">
+                    <img src="src/img/photo1.png" alt="прочее Фото" width="50" height="50"  class="modal__other-photos modal__other-photos--active">
+                    <img src="src/img/photo2.png" alt="прочее Фото" width="50" height="50" class="modal__other-photos">
                 </div>
             </div>
-            <div class="orderInfo">
-                <div class="productName">
+            <div class="modal__order-info">
+                <div class="modal__name">
                     Футболка "Эволюционируй или сдохни"
                 </div>
-                <div class="balance">
+                <div class="modal__balance">
                     <div class="balls">
-                        <span class="price">100 баллов</span>
-                        <button type = "button" class="orderBtn">Заказать</button>
+                        <span class="modal__price">100 баллов</span>
+                        <button type = "button" class="modal__order-btn">Заказать</button>
                     </div>
-                    <div class="yourBalance">
-                        <div class="text">
-                            <div class="yourBalanceText">Твой баланс:</div>
-                            <div class="yourBalanceQuantity">3 945 баллов</div>
+                    <div class="modal__your-balance">
+                        <div class="modal__text">
+                            <div class="modal__your-balance-text">Твой баланс:</div>
+                            <div class="modal__your-balance-quantity">3 945 баллов</div>
                         </div>
-                        <img src="src/img/package.png" alt="Покупки" class="package" width="40" height="41">
+                        <img src="src/img/package.png" alt="Покупки" class="modal__package" width="40" height="41">
                     </div>
                 </div>
                 <div class="colorBlock">
-                    <div class="colorTitle">
+                    <div class="modal__color-title">
                         Цвета:
                     </div>
-                    <div class="colorList">
-                        <input type="radio" class="colorsItem" id="radio-1" name="colors" checked>
-                        <label for="radio-1" class="colorsLabel colorsBlue">Синий</label>
-                        <input type="radio" class="colorsItem" id="radio-2" name="colors">
-                        <label for="radio-2" class="colorsLabel colorsBeige">Бежевый</label>
-                        <input type="radio" class="colorsItem" id="radio-3" name="colors">
-                        <label for="radio-3" class="colorsLabel colorsGrey">Серый</label>
+                    <div class="modal__color-list">
+                        <input type="radio" class="modal__colors-item" id="radio-1" name="colors" checked>
+                        <label for="radio-1" class="modal__colors-label modal__colors-label-blue">Синий</label>
+                        <input type="radio" class="modal__colors-item" id="radio-2" name="colors">
+                        <label for="radio-2" class="modal__colors-label modal__colors-label-beige">Бежевый</label>
+                        <input type="radio" class="modal__colors-item" id="radio-3" name="colors">
+                        <label for="radio-3" class="modal__colors-label modal__colors-label-grey">Серый</label>
                     </div>
                 </div>
-                <div class="colorBlock">
-                    <div class="colorTitle">
+                <div class="modal__color-block">
+                    <div class="modal__color-title">
                         Размер:
                     </div>
-                    <div class="sizeList">
-                        <input type="radio" class="sizeItem" id="radio-4" name="size" checked>
-                        <label for="radio-4" class="sizeLabel sizeBlue">S</label>
-                        <input type="radio" class="sizeItem" id="radio-5" name="size">
-                        <label for="radio-5" class="sizeLabel sizeBeige">M</label>
-                        <input type="radio" class="sizeItem" id="radio-6" name="size">
-                        <label for="radio-6" class="sizeLabel sizeGrey">L</label>
+                    <div class="modal__size-list">
+                        <input type="radio" class="modal__size-item" id="radio-4" name="size" checked>
+                        <label for="radio-4" class="modal__size-label modal__size-label-blue">S</label>
+                        <input type="radio" class="modal__size-item" id="radio-5" name="size">
+                        <label for="radio-5" class="modal__size-label modal__size-label-beige">M</label>
+                        <input type="radio" class="modal__size-item" id="radio-6" name="size">
+                        <label for="radio-6" class="modal__size-label modal__size-label-grey">L</label>
                     </div>
-                    <div class="details">
-                        <div class="detailsTitle">
+                    <div class="modal__details">
+                        <div class="modal__details-title">
                             Детали:
                         </div>
-                        <div class="detailsContent">
+                        <div class="modal__details-content">
                             Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%
                         </div>
                     </div>
-                    <div class="choiseSize">
-                        <div class="choiseSizeTitle">
+                    <div class="modal__choise-size">
+                        <div class="modal__choise-size-title">
                             Как выбрать размер:
                         </div>
-                        <div class="choiseSizeContent">
+                        <div class="modal__choise-size-content">
                             Написать дяде Рику для уточнения.
                         </div>
                     </div>
                 </div>
             </div>
-            <button type = "button" class="closeModal closeModalBtn"><img src="src/img/close-btn.png" alt="Закрыть окно" width="32" height="32"></button>
+            <button type = "button" data-modal="close" class="modal__close"><img src="src/img/close-btn.png" alt="Закрыть окно" width="32" height="32"></button>
         </div>
     </div>
-    <script src="src/js/main.js" defer></script>
+    <script src="src/js/main.js" defer type="module"></script>
   </body>
 </html>

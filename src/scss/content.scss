@@ -1,0 +1,38 @@
+
+.content {
+    width: 100%;
+
+    &__header {
+        margin-bottom: 24px;
+    }
+
+    &__banner {
+        margin-bottom: 24px;
+    }
+
+    &__actionBlocks {
+        margin-bottom: 40px;
+    }
+
+    &__hotBtns {
+        margin-bottom: 16px;
+    }
+
+    &__products {
+        @include flex(0,space-around);
+
+        margin-bottom: 64px;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+}
+
+* {
+    /* outline: 1px solid red; */
+}
+
+@media (max-width: 1100px) {
+    .content {
+        margin-right: 24px;
+    }
+}
