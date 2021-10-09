@@ -67,7 +67,7 @@
 
 @media (max-width: 480px) {
     .footer {
-        &__contactUs {
+        &__contact-us {
             @include flex(8px);
 
             width: 344px;
