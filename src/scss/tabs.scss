@@ -4,12 +4,10 @@
     gap: 8px;
 
     &__label {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(8px 24px, center, center);
+
         font-size: 14px;
         border-radius: 8px;
-        padding: 8px 24px;
         color: $blue-primary;
         outline: 1px solid rgba(28, 24, 25, 0.1);
         cursor: pointer;

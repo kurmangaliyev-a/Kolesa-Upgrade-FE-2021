@@ -36,7 +36,7 @@
     &__sizes {
         font-size: 14px;
         line-height: 24px;
-        color: #888b94;
+        color: $balance-text;
         margin-bottom: 32px;
     }
 
@@ -50,7 +50,7 @@
         padding-bottom: 16px;
         padding-top: 0;
         border-radius: 0 0 8px 8px;
-        background-color: #fff;
+        background-color: $white-primary;
     }
 
     &__open-modal {
@@ -58,7 +58,7 @@
         width: 100%;
         background: #2a81dd;
         box-shadow: 0 2px 4px #000/*rgba(28, 24, 25, 0.1);*/;
-        color: #fff;
+        color: $white-primary;
         border: none;
         height: 44px;
         cursor: pointer;
@@ -78,9 +78,9 @@
         position: absolute;
         margin-top: -36px;
         margin-left: 16px;
-        background-color: #64bd38;
+        background-color: $NEW-bgc;
         border-radius: 4px;
-        color: #fff;
+        color: $white-primary;
         text-align: center;
         font-weight: 400;
         font-size: 14px;

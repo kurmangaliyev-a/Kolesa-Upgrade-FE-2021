@@ -16,8 +16,13 @@ img {
 html,
 body {
     height: 100%;
-    color: #1c1819;
+    color: $text-black;
     font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: $text-black;
 }
 
 body {

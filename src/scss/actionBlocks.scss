@@ -5,13 +5,11 @@
     gap: 24px;
 
     &__item {
+        @include flex(0 0 0 24px, flex-start, center);
+
         width: 306px;
-        display: flex;
         gap: 16px;
         border-radius: 16px;
-        padding-left: 24px;
-        justify-content: flex-start;
-        align-items: center;
         text-decoration: none;
         cursor: pointer;
 

@@ -201,79 +201,79 @@
             <button type="button" class="footer__btn">Написать</button>
         </div>
     </footer>
-    <div class="modal hide">
-        <div class="container">
-            <div class="photo">
-                <div class="mainPhoto">
+    <div class="modal modal--hide" data-modal="close">
+        <div class="modal__container">
+            <div class="photo-block">
+                <div class="modal__mainPhoto">
                     <img src="src/img/mainPhoto.png" alt="Главное фото" width="330" height="330" class="mainPhotoImg">
                 </div>
-                <div class="otherPhotos">
-                    <img src="src/img/photo3.png" alt="прочее Фото" width="50" height="50">
-                    <img src="src/img/photo1.png" alt="прочее Фото" width="50" height="50" class="imgActive">
-                    <img src="src/img/photo2.png" alt="прочее Фото" width="50" height="50">
+                <div class="modal__other-photos-block">
+                    <img src="src/img/photo3.png" alt="прочее Фото" width="50" height="50" class="modal__other-photos">
+                    <img src="src/img/photo1.png" alt="прочее Фото" width="50" height="50"  class="modal__other-photos modal__other-photos--active">
+                    <img src="src/img/photo2.png" alt="прочее Фото" width="50" height="50" class="modal__other-photos">
                 </div>
             </div>
-            <div class="orderInfo">
-                <div class="productName">
+            <div class="modal__order-info">
+                <div class="modal__name">
                     Футболка "Эволюционируй или сдохни"
                 </div>
-                <div class="balance">
+                <div class="modal__balance">
                     <div class="balls">
-                        <span class="price">100 баллов</span>
-                        <button type = "button" class="orderBtn">Заказать</button>
+                        <span class="modal__price">100 баллов</span>
+                        <button type = "button" class="modal__order-btn">Заказать</button>
                     </div>
-                    <div class="yourBalance">
-                        <div class="text">
-                            <div class="yourBalanceText">Твой баланс:</div>
-                            <div class="yourBalanceQuantity">3 945 баллов</div>
+                    <div class="modal__your-balance">
+                        <div class="modal__text">
+                            <div class="modal__your-balance-text">Твой баланс:</div>
+                            <div class="modal__your-balance-quantity">3 945 баллов</div>
                         </div>
-                        <img src="src/img/package.png" alt="Покупки" class="package" width="40" height="41">
+                        <img src="src/img/package.png" alt="Покупки" class="modal__package" width="40" height="41">
                     </div>
                 </div>
                 <div class="colorBlock">
-                    <div class="colorTitle">
+                    <div class="modal__color-title">
                         Цвета:
                     </div>
-                    <div class="colorList">
-                        <input type="radio" class="colorsItem" id="radio-1" name="colors" checked>
-                        <label for="radio-1" class="colorsLabel colorsBlue">Синий</label>
-                        <input type="radio" class="colorsItem" id="radio-2" name="colors">
-                        <label for="radio-2" class="colorsLabel colorsBeige">Бежевый</label>
-                        <input type="radio" class="colorsItem" id="radio-3" name="colors">
-                        <label for="radio-3" class="colorsLabel colorsGrey">Серый</label>
+                    <div class="modal__color-list">
+                        <input type="radio" class="modal__colors-item" id="radio-1" name="colors" checked>
+                        <label for="radio-1" class="modal__colors-label modal__colors-label-blue">Синий</label>
+                        <input type="radio" class="modal__colors-item" id="radio-2" name="colors">
+                        <label for="radio-2" class="modal__colors-label modal__colors-label-beige">Бежевый</label>
+                        <input type="radio" class="modal__colors-item" id="radio-3" name="colors">
+                        <label for="radio-3" class="modal__colors-label modal__colors-label-grey">Серый</label>
                     </div>
                 </div>
-                <div class="colorBlock">
-                    <div class="colorTitle">
+                <div class="modal__color-block">
+                    <div class="modal__color-title">
                         Размер:
                     </div>
-                    <div class="sizeList">
-                        <input type="radio" class="sizeItem" id="radio-4" name="size" checked>
-                        <label for="radio-4" class="sizeLabel sizeBlue">S</label>
-                        <input type="radio" class="sizeItem" id="radio-5" name="size">
-                        <label for="radio-5" class="sizeLabel sizeBeige">M</label>
-                        <input type="radio" class="sizeItem" id="radio-6" name="size">
-                        <label for="radio-6" class="sizeLabel sizeGrey">L</label>
+                    <div class="modal__size-list">
+                        <input type="radio" class="modal__size-item" id="radio-4" name="size" checked>
+                        <label for="radio-4" class="modal__size-label modal__size-label-blue">S</label>
+                        <input type="radio" class="modal__size-item" id="radio-5" name="size">
+                        <label for="radio-5" class="modal__size-label modal__size-label-beige">M</label>
+                        <input type="radio" class="modal__size-item" id="radio-6" name="size">
+                        <label for="radio-6" class="modal__size-label modal__size-label-grey">L</label>
                     </div>
-                    <div class="details">
-                        <div class="detailsTitle">
+                    <div class="modal__details">
+                        <div class="modal__details-title">
                             Детали:
                         </div>
-                        <div class="detailsContent">
+                        <div class="modal__details-content">
                             Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%
                         </div>
                     </div>
-                    <div class="choiseSize">
-                        <div class="choiseSizeTitle">
+                    <div class="modal__choise-size">
+                        <div class="modal__choise-size-title">
                             Как выбрать размер:
                         </div>
-                        <div class="choiseSizeContent">
+                        <div class="modal__choise-size-content">
                             Написать дяде Рику для уточнения.
                         </div>
                     </div>
                 </div>
             </div>
-            <button type = "button" class="closeModal closeModalBtn"><img src="src/img/close-btn.png" alt="Закрыть окно" width="32" height="32"></button>
+            <button type = "button" data-modal="close" class="modal__close"><img src="src/img/close-btn.png" alt="Закрыть окно" width="32" height="32"></button>
         </div>
     </div>
     <script src="src/js/main.js" defer type="module"></script>

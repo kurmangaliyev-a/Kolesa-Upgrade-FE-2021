@@ -68,8 +68,8 @@
 @media (max-width: 480px) {
     .footer {
         &__contactUs {
-            display: flex;
-            flex-direction: column;
+            @include flex(8px);
+
             width: 344px;
             padding: 8px;
             gap: 8px;
