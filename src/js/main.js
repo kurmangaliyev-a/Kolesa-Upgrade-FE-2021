@@ -1,21 +1,44 @@
 import '../scss/style.scss';
 
 const baseUrl = 'http://api.mcdir.me/api/v1';
+let cardsInfo;
 
 document.querySelector('.header .search').addEventListener('click', (e) => {
     if (!e.target.classList.contains('search-icon')) {
         document.querySelector('.search input[type="search"]').focus();
     }
 });
+function changeModalInfo(id) {
+    let myCard;
 
+    cardsInfo.forEach((item) => {
+        if (item.id === id) {
+            myCard = item;
+        }
+    });
+    let ballsInRus;
+
+    if (myCard.price % 10 === 1) {
+        ballsInRus = '';
+    } else if (myCard.price % 10 > 0 && myCard.price % 10 < 5) {
+        ballsInRus = 'a';
+    } else {
+        ballsInRus = 'ов';
+    }
+
+    document.querySelector('.modal__main-photo-img').src = `http://api.mcdir.me${myCard.main_photo}`;
+    document.querySelector('.modal__main-photo-img').alt = myCard.name;
+    document.querySelector('.modal__name').textContent = myCard.name;
+    document.querySelector('.modal__details-content').textContent = myCard.description;
+    document.querySelector('.modal__price').textContent = `${myCard.price} балл${ballsInRus}`;
+}
 function openModal(id) {
     const modal = document.querySelector('.modal');
 
+    changeModalInfo(id);
     modal.classList.remove('modal--hide');
-    modal.textContent += id;
 }
 function productModalWindow() {
-    const elements = document.querySelectorAll('.product__open-modal');
     const modal = document.querySelector('.modal');
     const closeModal = document.querySelector('.modal__close');
 
@@ -28,12 +51,6 @@ function productModalWindow() {
             modal.classList.add('modal--hide');
             document.body.style.overflow = '';
         }
-    });
-    elements.forEach((elm) => {
-        elm.addEventListener('click', () => {
-            modal.classList.remove('modal--hide');
-            document.body.style.overflow = 'hidden';
-        });
     });
     closeModal.addEventListener('click', () => {
         modal.classList.add('modal--hide');
@@ -79,7 +96,9 @@ function renderBlock(data) {
         product.addEventListener('click', () => {
             openModal(item.id);
         });
-        img.src = `http://api.mcdir.me/${item.main_photo}`;
+        img.src = `http://api.mcdir.me${item.main_photo}`;
+        img.width = '330';
+        img.height = '330';
         img.alt = item.name;
         img.classList.add('product__mainPhoto');
 
@@ -94,9 +113,9 @@ function renderBlock(data) {
         product.append(productInfo);
         let ballsInRus;
 
-        if (item.price % 5 === 1) {
+        if (item.price % 10 === 1) {
             ballsInRus = '';
-        } else if (item.price % 5 > 0 && item.price % 5 < 5) {
+        } else if (item.price % 10 > 0 && item.price % 10 < 5) {
             ballsInRus = 'a';
         } else {
             ballsInRus = 'ов';
@@ -126,15 +145,15 @@ function renderBlock(data) {
     });
 }
 
-function getCards(type = '') {
+function getCards(type = 0) {
     let url;
     const orderBy = 'is_new';
     const orderDirection = 'desc';
 
     url = `${baseUrl}/product?column=${orderBy}&direction=${orderDirection}`;
 
-    if (type !== '') {
-        url = `&type_id=${type}`;
+    if (type !== 0) {
+        url += `&type_id=${type}`;
     }
 
     fetch(url, {
@@ -145,11 +164,22 @@ function getCards(type = '') {
     })
         .then(response => response.json())
         .then((json) => {
+            cardsInfo = json.data;
             renderBlock(json.data);
         })
         .catch(() => {
-            alert('Ошибка соединения, попробуйте повторить позже');
+            document.querySelector('.products').textContent = 'Ошибка соединения, попробуйте повторить позже';
         });
 }
+
+function getDataByType() {
+    document.querySelectorAll('input[name="hotBtn"]').forEach((elm) => {
+        elm.addEventListener('input', () => {
+            getCards(elm.value);
+        });
+    });
+}
+
+getDataByType();
 getCards();
 productModalWindow();
