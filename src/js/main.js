@@ -28,6 +28,8 @@ function changeModalInfo(id) {
 
     document.querySelector('.modal__main-photo-img').src = `http://api.mcdir.me${myCard.main_photo}`;
     document.querySelector('.modal__main-photo-img').alt = myCard.name;
+    document.querySelector('.modal__other-photos--active').src = `http://api.mcdir.me${myCard.main_photo}`;
+    document.querySelector('.modal__other-photos--active').alt = myCard.name;
     document.querySelector('.modal__name').textContent = myCard.name;
     document.querySelector('.modal__details-content').textContent = myCard.description;
     document.querySelector('.modal__price').textContent = `${myCard.price} балл${ballsInRus}`;
@@ -100,7 +102,7 @@ function renderBlock(data) {
         img.width = '330';
         img.height = '330';
         img.alt = item.name;
-        img.classList.add('product__mainPhoto');
+        img.classList.add('product__main-photo');
 
         if (item.is_new === 1) {
             const newProduct = document.createElement('div');
