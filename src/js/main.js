@@ -16,14 +16,14 @@ function changeModalInfo(id) {
             myCard = item;
         }
     });
-    let ballsInRus;
+    let pointsInRus;
 
     if (myCard.price % 10 === 1) {
-        ballsInRus = '';
+        pointsInRus = '';
     } else if (myCard.price % 10 > 0 && myCard.price % 10 < 5) {
-        ballsInRus = 'a';
+        pointsInRus = 'a';
     } else {
-        ballsInRus = 'ов';
+        pointsInRus = 'ов';
     }
 
     document.querySelector('.modal__main-photo-img').src = `http://api.mcdir.me${myCard.main_photo}`;
@@ -32,7 +32,7 @@ function changeModalInfo(id) {
     document.querySelector('.modal__other-photos--active').alt = myCard.name;
     document.querySelector('.modal__name').textContent = myCard.name;
     document.querySelector('.modal__details-content').textContent = myCard.description;
-    document.querySelector('.modal__price').textContent = `${myCard.price} балл${ballsInRus}`;
+    document.querySelector('.modal__price').textContent = `${myCard.price} балл${pointsInRus}`;
 }
 function openModal(id) {
     const modal = document.querySelector('.modal');
@@ -113,17 +113,17 @@ function renderBlock(data) {
         }
 
         product.append(productInfo);
-        let ballsInRus;
+        let pointsInRus;
 
         if (item.price % 10 === 1) {
-            ballsInRus = '';
+            pointsInRus = '';
         } else if (item.price % 10 > 0 && item.price % 10 < 5) {
-            ballsInRus = 'a';
+            pointsInRus = 'a';
         } else {
-            ballsInRus = 'ов';
+            pointsInRus = 'ов';
         }
 
-        productPrice.textContent = `${item.price} балл${ballsInRus}`;
+        productPrice.textContent = `${item.price} балл${pointsInRus}`;
         productInfo.append(productPrice);
 
         productName.textContent = item.name;
@@ -147,7 +147,7 @@ function renderBlock(data) {
     });
 }
 
-function getCards(type = 0) {
+function initCards(type = 0) {
     let url;
     const orderBy = 'is_new';
     const orderDirection = 'desc';
@@ -174,14 +174,14 @@ function getCards(type = 0) {
         });
 }
 
-function getDataByType() {
+function initDataByType() {
     document.querySelectorAll('input[name="hotBtn"]').forEach((elm) => {
         elm.addEventListener('input', () => {
-            getCards(elm.value);
+            initCards(elm.value);
         });
     });
 }
 
-getDataByType();
-getCards();
+initDataByType();
+initCards();
 productModalWindow();

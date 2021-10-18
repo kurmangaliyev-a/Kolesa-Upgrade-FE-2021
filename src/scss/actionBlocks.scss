@@ -14,15 +14,15 @@
         cursor: pointer;
 
         &--take {
-            background: $take-balls-bgc;
+            background: $take-points-bgc;
         }
 
         &--howToTake {
-            background: $how-to-take-balls-bgc;
+            background: $how-to-take-points-bgc;
         }
 
         &--donate {
-            background: $donate-balls-bgc;
+            background: $donate-points-bgc;
         }
 
         &:hover {
