@@ -21,7 +21,7 @@
         overflow: auto;
     }
 
-    &____mainPhoto {
+    &__main-photo {
         display: block;
         margin-bottom: 16px;
     }
@@ -180,26 +180,35 @@
 
         &--blue {
             &::before {
-                background: #00458a;
+                background: $blue-label;
+                content: '';
+                display: block;
+                width: 24px;
+                height: 24px;
+                border-radius: 4px;
             }
         }
 
-        &--beige::before {
-            background: #efe8d8;
+        &--beige {
+            &::before {
+                content: '';
+                display: block;
+                width: 24px;
+                height: 24px;
+                border-radius: 4px;
+                background: $beige-label;
+            }
         }
 
-        &--grey::before {
-            background: #d4d4da;
-        }
-
-        &--blue::before,
-        &--beige::before,
-        &--grey::before {
-            content: '';
-            display: block;
-            width: 23px;
-            height: 24px;
-            border-radius: 4px;
+        &--grey {
+            &::before {
+                content: '';
+                display: block;
+                width: 24px;
+                height: 24px;
+                border-radius: 4px;
+                background: $grey-label;
+            }
         }
     }
 
